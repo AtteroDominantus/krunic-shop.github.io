@@ -1,0 +1,179 @@
+$btnfont:1.5rem;
+$pcfont: 1.1rem;
+$tabfont: .9rem;
+$mobfont: .75rem;
+$colorMain:orange;
+$colorGreyPale:#f4f5f7;
+$colorGreyStrong:#eaeaea;
+$marginInline:5rem;
+$colorHover:rgba(218, 151, 19, 0.149);
+$fontH2:2rem;
+$fontH2mob:1.5rem;
+
+
+*  {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif ;
+    list-style-type: none;
+    text-decoration: none;
+    scroll-behavior: smooth;
+    // user-select: none;
+    -webkit-tap-highlight-color: transparent;
+    
+    
+    }
+    
+    h3 {
+        font-family: 900;
+    }
+    body {
+    //  background-color: white;
+    
+    }
+    button,a {
+        cursor: pointer !important;
+    }
+    a {
+        color: inherit;
+        cursor: pointer !important;
+    }
+    .hover:hover {
+        border-radius: 30px;
+        background: $colorHover;
+        cursor: pointer;
+    }
+    .show-footer {
+        
+        opacity: 1 !important; /* Fully visible */
+        transition: opacity 0.3s , display 0.5s !important; 
+            display: block !important; /* Show the element */
+            // padding: 0px 5px; 
+            
+        } 
+        
+        .rotate {
+            transform: rotate(90deg) !important;
+        }
+        .login-input {
+            
+            font-family: Roboto,"system-ui",-apple-system,sans-serif;
+            -webkit-box-shadow: inset 0 0 0 0.0625rem hsl(213,10.6%,59.2%);
+            box-shadow: inset 0 0 0 0.0625rem #8c96a2;
+            border: none;
+            background-color: #fff;
+            border-radius: 4px;
+        
+            font-weight: 400;
+            font-size: 1rem;
+            padding-block: 0.75rem;
+            -webkit-padding-start: 0.75rem;
+            padding-inline-start: 0.75rem;
+            -webkit-padding-end: 2.25rem;
+            padding-inline-end: 2.25rem;
+            color: #001018;
+            min-block-size: 3rem;
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            appearance: none;
+            -webkit-transition: -webkit-box-shadow .2s ease-out;
+            transition: -webkit-box-shadow .2s ease-out;
+            transition: box-shadow .2s ease-out;
+            transition: box-shadow .2s ease-out,-webkit-box-shadow .2s ease-out;
+        }
+      .button-prime {
+          padding: 10px;
+          font-size: $pcfont;
+          border-radius: 5px;
+          max-width: 160px;
+          background: yellow;
+          color: black;
+          font-weight: 800;
+          border: none;
+          cursor: pointer;
+          &:hover {
+              scale: 1.03;
+              transition: 200ms;
+          }
+    }
+    .button-prime-no-bg {
+        padding: 10px;
+        font-size: $pcfont;
+        border-radius: 5px;
+        max-width: 160px;
+        color: black;
+        font-weight: 800;
+        border: none;
+        cursor: pointer;
+        &:hover {
+            scale: 1.03;
+            transition: 200ms;
+        }
+  }
+    
+    // js klase
+    
+    
+    .show {
+        display: block !important;
+    }
+    .none {
+        display: none;
+    }
+    
+    // media font
+    @media (min-width: 1000px) {
+       main {
+        // margin: 2% 10% !important; 
+       }
+       
+    
+    } 
+    
+    
+    @media (max-width: 900px) {
+        ul,li,p,a,span,label {
+            font-size: $tabfont;
+        }
+        main {
+            // margin: 0% 0%;
+           }
+           .button-prime {
+            padding: 10px;
+            font-size: $tabfont;
+           }
+           
+           h3 {
+            font-size: $tabfont;
+           }
+           h2 {
+            font-size: $fontH2mob !important;
+           }
+        } 
+    
+    @media (max-width: 590px) {
+        ul,li,p,a,span,label {
+            font-size: $mobfont;
+          
+        }
+       
+    }
+    @media (max-width: 290px) {
+        ul,li,p,a,span,input,label {
+            font-size: 10px !important;
+          
+        }
+        h1 {
+            font-size: 13px !important;
+        }
+        h2 {
+            font-size: 12px !important;
+        }
+        h3 {
+            font-size: 11px !important;
+        }
+        i {
+            font-size: 13px !important;
+        }
+    }

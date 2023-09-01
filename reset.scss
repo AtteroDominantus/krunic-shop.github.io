@@ -1,0 +1,147 @@
+@import "./dropdownMenu";
+@import "./mediaDropDown";
+@import "./carousel";
+@import "./main";
+@import "./mainMedia";
+// @import "./login/SignUp/signUpStyles/signUp";
+
+
+*  {
+padding: 0;
+margin: 0;
+box-sizing: border-box;
+font-family: 'Roboto', sans-serif ;
+list-style-type: none;
+text-decoration: none;
+scroll-behavior: smooth;
+user-select: none;
+-webkit-tap-highlight-color: transparent;
+
+
+}
+
+h3 {
+    font-family: 900;
+}
+body {
+ background-color: white;
+
+}
+button,a {
+    cursor: pointer;
+}
+a {
+    color: inherit;
+    cursor: pointer;
+}
+.hover:hover {
+    border-radius: 30px;
+    background: $colorHover;
+    cursor: pointer;
+}
+.show-footer {
+    
+    opacity: 1 !important; /* Fully visible */
+    transition: opacity 0.3s , display 0.5s !important; 
+        display: block !important; /* Show the element */
+        // padding: 0px 5px;
+  
+        
+        
+        
+    } 
+    
+    .rotate {
+        transform: rotate(90deg) !important;
+    }
+    @keyframes fade-in {
+        from { opacity: 0; }
+    }
+    dialog {
+      animation: fade-in 200ms;
+      transition: opacity 200ms;
+    opacity: 1; 
+  }
+
+.button-prime {
+    padding: 10px;
+    font-size: $pcfont;
+    border-radius: 5px;
+    max-width: 160px;
+    background: yellow;
+    color: black;
+    font-weight: 800;
+    border: none;
+    &:hover {
+        scale: 1.1;
+        transition: 200ms;
+    }
+}
+
+// js klase
+
+
+.show {
+    display: block !important;
+}
+.none {
+    display: none;
+}
+
+// media font
+@media (min-width: 1000px) {
+   main {
+    margin: 2% 10% !important; 
+   }
+   
+} 
+
+
+@media (max-width: 900px) {
+    ul,li,p,a,span {
+        font-size: $tabfont;
+    }
+    main {
+        margin: 0% 0%;
+    }
+    .button-prime {
+        padding: 5px;
+        font-size: $tabfont;
+    }
+    
+    h3 {
+        font-size: $tabfont;
+    }
+    h2 {
+        font-size: $fontH2mob !important;
+    }
+} 
+
+@media (max-width: 590px) {
+    i {
+     font-size: $pcfont !important;
+    }
+    ul,li,p,a,span {
+        font-size: $mobfont !important;
+      
+    }
+   
+}
+@media (max-width: 290px) {
+    ul,li,p,a,span,input {
+        font-size: 10px !important;
+      
+    }
+    h1,button {
+        font-size: 13px !important;
+    }
+    h2 {
+        font-size: 12px !important;
+    }
+    h3 {
+        font-size: 11px !important;
+    }
+    i {
+        font-size: 13px !important;
+    }
+}

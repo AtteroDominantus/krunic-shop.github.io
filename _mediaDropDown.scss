@@ -1,0 +1,260 @@
+@media (max-width:1000px) {
+ 
+.nav-cont-top {
+    display: flex;
+    justify-content: center;
+    // position: ;
+    position: fixed;
+    width: 100%;
+    
+    background-color: white;
+    margin: 0;
+    padding: 0;
+   
+    z-index: 22;
+    
+
+}
+.backbtnItems {
+    font-size: $tabfont;
+    // margin-bottom: 100px;
+    font-weight: 800;
+    cursor: pointer;
+    // padding: 5px 350px 0 0;
+}
+.prvi-div {
+    margin-top: 9.2rem !important;
+}
+.hamburger-cont {
+    position: absolute;
+    padding: 10PX;
+    top: 20%;
+    left: 6%;
+    display: block;
+    cursor: pointer;
+    i {
+        font-size: 1.5rem;
+        color: $colorMain;
+
+    }
+}
+.hambi-cross-div {
+    z-index: 3;
+    display: block;
+    position: relative;
+    
+    i {
+        cursor: pointer;
+    }
+   
+    button {
+        z-index: 4;
+        padding: 20px;
+       position: absolute;
+       right: -3px;
+       bottom: -25px;
+        font-size: 1.4rem;
+        color: black;
+        cursor: pointer;
+        border: none;
+        border-radius: 30px;
+        background: none;
+
+    }
+  
+}
+
+.hamburger-cont:HOVER { 
+     background-color: $colorHover;
+     border-radius: 100px;
+}
+.hamburger-cont i:active { 
+    scale: 1.2;
+}
+
+.logo-search {
+    flex-direction: column;
+    form {
+        width: 90vw;
+    }
+}
+
+.shoping-cart-icon {
+    position: absolute;
+    top:20%;
+    right: 4%;
+    padding: 10px;
+    i {
+    font-size:1.5rem;
+    }
+  
+}
+.user-support-nav,
+.help-shop-section ,
+.user-account-section-nav {
+    display: none;
+}
+
+
+
+// PRVI MENU NA KLIK
+.dropdown-menu-categories,
+.last-categorys-ul {
+    display: none;
+    padding-top: 3.4rem;
+    box-shadow: 2px 7px 73px 20px rgba(0,0,0,0.26);
+    -webkit-box-shadow: 2px 7px 73px 20px rgba(0,0,0,0.26);
+    -moz-box-shadow: 2px 7px 73px 20px rgba(0,0,0,0.26);
+    overflow: scroll;
+    flex-direction: column;
+    min-width: 70VW;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    z-index: 23;
+    background:rgb(246, 243, 237);
+    font-size: $tabfont;
+    word-wrap: break-word;
+    
+}
+.dropdown-categories-btn {
+  
+    z-index: 1;
+    display: flex;
+    width: 100%;
+    margin-top: 25px;
+    cursor: pointer;
+    &::after {
+        content: "";
+        rotate: 268deg;
+        position: absolute;
+        top: 20px;
+        left: 90%;
+        border-left:$colorMain solid 6px;
+        
+    }
+ 
+    &:nth-child(3) {
+        border-top: 0.1px solid;
+    }
+}
+// login or register
+.user-account-section-dropdown  {
+    position: relative;
+    width: 200px;
+    top: -20px;
+    left: 30px;
+    z-index: 3;
+    display: flex;
+    a {    
+        padding: 2px;
+        font-size: $mobfont;
+        // display: flex;
+        // margin-left: 4px;
+        &:nth-child(3) {
+            
+            color: blue;
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+     
+    }
+}
+
+
+// drugi red categorija cont
+.dropdown-sub-categories-main-cont {
+    display: none;
+    box-shadow: 2px 7px 73px 20px rgba(0,0,0,0.26);
+    -webkit-box-shadow: 2px 7px 73px 20px rgba(0,0,0,0.26);
+    -moz-box-shadow: 2px 7px 73px 20px rgba(0,0,0,0.26);
+    height: 100vh;
+    width: 70VW;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 2;
+    background:rgb(246, 243, 237);
+    font-size: $tabfont;
+    padding-top: 30px;
+    word-wrap: break-word;
+  
+}
+// slika i ime 2 kategorije
+.dropdownp-sub-sub-div_img-name {
+    min-width: 70vw;
+    position: relative;
+    word-wrap: break-word;
+    cursor: pointer;
+    img {
+        width: 45px;
+        margin-left: 10px !important;
+    }
+    span {
+        min-width: 80%;
+        height: 100%;
+        &::after {
+            content: ">";
+            position: absolute;
+           
+            right: 20px;
+            
+            z-index: 4;
+    }
+
+}
+}
+.dropdownp-sub-sub-div_img-name:hover {
+    background: $colorHover;
+    
+}
+// A linkovi
+.last-categorys-ul {
+    li {
+        margin-top: 20px;
+        display: flex;
+        font-weight: 900;
+        word-wrap: break-word;
+        padding-left: 40px;
+    }
+}
+
+.dropdownp-sub-sub {
+    display: grid;
+    grid-template-columns: 1fr ;
+    width: 100%;
+    margin-top: 3rem;
+    
+    font-size: $mobfont;
+   
+}
+
+}
+
+@media (max-width:650px) {
+    nav {
+        font-size: $mobfont !important;
+    }
+    .dropdown-sub-categories-main-cont {
+        
+        padding-left: 5px;
+     
+    }
+    .dropdownp-sub-sub {
+        gap: 10px;
+        width: 97%;
+        
+        font-size: $mobfont;
+    }
+    
+}
+
+
+
+
+
+
+
+
+
